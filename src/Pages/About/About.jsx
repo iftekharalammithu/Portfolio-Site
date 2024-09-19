@@ -1,8 +1,12 @@
 import React from "react";
 import "./About.css";
+import { ParallaxSlider } from "../../Components/Slider";
 const About = () => {
   return (
-    <div className="h-screen bg-[#83ccdf] flex items-center justify-center overflow-hidden">
+    <div
+      id="about"
+      className="h-screen bg-[#83ccdf] flex items-center justify-center overflow-hidden"
+    >
       <button className="button">
         <svg xmlns="http://www.w3.org/2000/svg">
           <rect className="border" pathLength="100"></rect>
