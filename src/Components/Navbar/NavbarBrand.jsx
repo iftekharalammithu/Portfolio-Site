@@ -2,7 +2,10 @@ import { CodeXml } from "lucide-react";
 
 export function NavbarBrand() {
   return (
-    <div className="group transition-transform duration-450 ease-in-expo  hover:scale-125 flex cursor-pointer pb-5">
+    <div
+      onClick={() => (window.location.href = "/")}
+      className="group transition-transform duration-450 ease-in-expo hover:scale-125 flex cursor-pointer pb-5"
+    >
       <div className="transition-transform duration-500 ease-in-expo group-hover:rotate-[360deg]">
         <CodeXml />
       </div>
