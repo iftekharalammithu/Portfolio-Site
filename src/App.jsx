@@ -2,6 +2,7 @@ import { Transition } from "./Components/Transition";
 import About from "./Pages/About/About";
 import { Navbar } from "./Components/Navbar";
 import { Header } from "./Components/Header";
+import Work from "./Pages/Work/Work";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Navbar></Navbar>
         <Header></Header>
         <About></About>
+        <Work></Work>
       </Transition>
     </>
   );

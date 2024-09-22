@@ -6,6 +6,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        textcolor: "#ff4D00",
+      },
       fontFamily: {
         marker: ['"Permanent Marker"', "cursive"],
       },

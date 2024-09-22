@@ -1,8 +1,4 @@
 .animated-item {
-  color: #ffc200;
-}
-
-.animated-item {
   font-size: 48px;
   line-height: inherit;
   display: block;
@@ -14,12 +10,18 @@
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
+
 .animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
 
 .animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
+}
+
+.animated-container:hover .animated-item {
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
 @keyframes BottomTotop {
