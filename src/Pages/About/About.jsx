@@ -138,11 +138,11 @@ const About = () => {
           <p className="mb-6 text-[20px]">
             Hey there! I&apos;m a dedicated full-stack web application developer
             with a strong background in building MERN Stack Applications. I
-            specialize in using React js and Next js for the front end, and Node
-            Js, Mongoose, and MongoDB for the back end. I have experience in
-            aggregating data in MongoDB and writing aggregation pipelines. Right
-            now, I&apos;m based in Dubai, UAE. I&apos;m excited about the
-            possibility of working together with you on some awesome projects!
+            specialize in using React js for the front end, and Node Js,
+            Mongoose, and MongoDB for the back end. I have experience in
+            aggregating data in MongoDB and writing aggregation pipelines.
+            I&apos;m excited about the possibility of working together with you
+            on some awesome projects!
           </p>
           <h3 className="text-2xl font-semibold mb-1">
             Stacks I can be trusted with
@@ -150,7 +150,7 @@ const About = () => {
           <p className="text-[20px]">
             Javascript - React js - Tailwind CSS - Next js - React bootstrap -
             GraphQL - Node Js - Animation - Mongoose - MongoDB - Redux Toolkit -
-            Express Js - Firebase - Bootstrap - Material UI - Framer Motion
+            Express - Firebase - Bootstrap - Material UI - Framer Motion
             Animation - Cloudinary - Stripe - MySQL - Python ||
           </p>
         </div>

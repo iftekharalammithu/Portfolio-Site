@@ -28,6 +28,7 @@ export function Header() {
         </div>
         {/* Image positioned at the bottom */}
         <img
+          loading="lazy"
           // absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
           className=" absolute  h-[866px] w-[866px] overflow-visible -bottom-16  -translate-x-1/2 left-1/2 transform " // Set the image to be at the bottom
           style={{
