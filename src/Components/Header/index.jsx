@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { slideUp } from "./variants";
 import Name_Animate from "../Name_Animation/Name_Animate";
 import { MoveDownRight } from "lucide-react";
+import img from "../../assets/final2.png";
 
 export function Header() {
   return (
@@ -28,8 +29,16 @@ export function Header() {
         {/* Image positioned at the bottom */}
         <img
           // absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-          className=" absolute overflow-visible bottom-0  -translate-x-1/2 left-1/2 transform " // Set the image to be at the bottom
-          src="src/assets/Untitled design.png"
+          className=" absolute  h-[866px] w-[866px] overflow-visible -bottom-16  -translate-x-1/2 left-1/2 transform " // Set the image to be at the bottom
+          style={{
+            filter: `
+            drop-shadow(1px 0 1px white)
+            drop-shadow(-1px 0 1px white)
+            drop-shadow(0 1px 1px white)
+            drop-shadow(0 -1px 1px white)
+          `,
+          }}
+          src={img}
           alt="Mtihu"
         />
         <Name_Animate />
