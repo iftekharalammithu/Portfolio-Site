@@ -126,7 +126,7 @@ const About = () => {
           data-aos-duration="2000"
           data-aos-delay="70"
           data-aos-mirror="true"
-          className="w-2/3 flex capitalize flex-col gap-6 pr-8 "
+          className="w-2/3 flex  capitalize flex-col gap-6 pr-8 "
         >
           <h2 className="text-5xl text-center font-bold mb-4">
             Offering Services
@@ -144,10 +144,10 @@ const About = () => {
             I&apos;m excited about the possibility of working together with you
             on some awesome projects!
           </p>
-          <h3 className="text-2xl font-semibold mb-1">
+          <h3 className="text-3xl  font-semibold text-textcolor mb-1">
             Stacks I can be trusted with
           </h3>
-          <p className="text-[20px]">
+          <p className="text-[20px] font-semibold">
             Javascript - React js - Tailwind CSS - Next js - React bootstrap -
             GraphQL - Node Js - Animation - Mongoose - MongoDB - Redux Toolkit -
             Express - Firebase - Bootstrap - Material UI - Framer Motion
@@ -159,13 +159,13 @@ const About = () => {
           data-aos-duration="2000"
           data-aos-delay="70"
           data-aos-mirror="true"
-          className="w-1/3  justify-center  items-center flex flex-col gap-6 pl-8"
+          className="w-1/3  justify-center  items-center flex flex-col gap-9 pl-8"
         >
           <h1 className="text-5xl  text-center font-bold mb-4 mt-0">
             Services
           </h1>
-          <ul className="space-y-8 text-textcolor font-bold text-sm sm:text-base md:text-3xl">
-            <li className="flex items-center gap-3">
+          <ul className="space-y-10  flex flex-col pb-2  text-textcolor font-semibold text-sm sm:text-base md:text-3xl">
+            <li className="flex  items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 mr-2 text-textcolor"
