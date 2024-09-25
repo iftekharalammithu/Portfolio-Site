@@ -19,6 +19,7 @@ export function Transition({ children }) {
   });
   useEffect(() => {
     setLoading(true); // Set loading state on route change
+    // console.log(location.pathname);
   }, [location.pathname]);
 
   return (

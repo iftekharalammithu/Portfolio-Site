@@ -30,7 +30,7 @@ const Footer = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <div className="bg-black text-white">
+    <div id="contact" className="bg-black text-white">
       <div className="mx-20 flex justify-between ">
         <div className=" pt-20 max-w-4xl  flex flex-col gap-2">
           <img

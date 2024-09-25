@@ -9,10 +9,9 @@
   --width: 1400px;
   --quantity: 2;
 }
-::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+::webkit-scrollbar {
+  display: none;
 }
-
 .bdr {
   border: 1px solid red;
 }

@@ -47,7 +47,7 @@ export function Preloader() {
 
   return (
     <MotionComponent
-      className="fixed z-50 h-screen w-screen cursor-vertical-text	 bg-foreground"
+      className="fixed z-50 h-screen w-screen cursor-default bg-foreground"
       variants={slideUp}
       initial="initial"
       exit="exit"
@@ -55,13 +55,15 @@ export function Preloader() {
       {width > 0 ? (
         <>
           <MotionComponent
-            className="text-3xl text-background md:text-4xl"
+            className="flex flex-col items-center justify-center text-center px-4"
             variants={fade}
             initial="initial"
             animate="enter"
           >
-            <Dot size={48} className="me-3" />
-            <p className="text-white text-5xl">{preloaderWords[index]}</p>
+            <Dot size={48} className="mb-2" />
+            <p className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              {preloaderWords[index]}
+            </p>
           </MotionComponent>
           <motion.svg className="absolute top-0 -z-10 h-[calc(100%+300px)] w-full">
             <motion.path
