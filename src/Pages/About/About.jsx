@@ -143,9 +143,9 @@ const About = () => {
           </h3>
           <p className="text-[16px] sm:text-[18px] md:text-[20px] font-semibold">
             Javascript - React js - Tailwind CSS - Next js - React bootstrap -
-            GraphQL - Node Js - Animation - Mongoose - MongoDB - Redux Toolkit -
-            Express - Firebase - Bootstrap - Material UI - Framer Motion
-            Animation - Cloudinary - Stripe - MySQL - Python ||
+            GraphQL - Node Js - Mongoose - MongoDB - Redux Toolkit - Express -
+            Firebase - Material UI - Framer Motion Animation - Cloudinary -
+            Stripe - MySQL - Python ||
           </p>
         </div>
         <div
