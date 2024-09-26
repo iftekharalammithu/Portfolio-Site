@@ -1,6 +1,8 @@
 # 🌟 Portfolio Site
 
-![Portfolio Site Preview](src/assets/Portfo.png)
+<div style="text-align: center;">
+  <img src="src/assets/Portfo.png" alt="Portfolio Site Preview" style="display: block; margin: auto; border-radius: 20px;">
+</div>
 
 ## 📖 About This Project
 
