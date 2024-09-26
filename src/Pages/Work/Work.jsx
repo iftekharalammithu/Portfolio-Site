@@ -5,23 +5,31 @@ import { motion } from "framer-motion";
 const imageLinks = [
   {
     name: "Image1",
-    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357043/cld-sample.jpg",
+    projectLink:
+      "https://github.com/iftekharalammithu/food-delivery-app-fontend.git",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727362844/homepage_snmex8.png",
   },
   {
     name: "Image 2",
-    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357043/cld-sample-2.jpg",
+    projectLink: "https://github.com/iftekharalammithu/Chat-App-Mern-Stack.git",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727363090/image_en3cga.png",
   },
   {
     name: "Image 3",
-    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357043/cld-sample-3.jpg",
+    projectLink:
+      "https://github.com/iftekharalammithu/Hospital-Management-System.git",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727363354/image_1_hu8pbz.png",
   },
   {
     name: "Image 4",
-    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357044/cld-sample-4.jpg",
+    projectLink: "https://github.com/iftekharalammithu/job-portal-fontend.git",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727365263/image_pmmpha.png",
   },
   {
     name: "Image 5",
-    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357044/cld-sample-5.jpg",
+    projectLink:
+      "https://github.com/iftekharalammithu/E-Commerce-Project-FontEND.git",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727366081/Screenshot_182_wq8iog.png",
   },
 ];
 
@@ -38,6 +46,7 @@ const Work = () => {
         <ImageWithScaleAnimation
           image={image.link}
           name={image.name}
+          projectLink={image.projectLink}
           index={index}
           key={index}
         />
@@ -60,7 +69,7 @@ const Work = () => {
   );
 };
 
-const ImageWithScaleAnimation = ({ image, index, name }) => {
+const ImageWithScaleAnimation = ({ image, index, name, projectLink }) => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, { amount: 0.5 }); // Adjust the threshold as needed
@@ -80,10 +89,10 @@ const ImageWithScaleAnimation = ({ image, index, name }) => {
     >
       <motion.img
         onClick={() => {
-          window.open(name, "_blank");
+          window.open(projectLink, "_blank");
         }}
         src={image}
-        alt={`Image ${index + 1}`}
+        alt={name}
         className="absolute w-[300px] rounded-2xl h-[200px] sm:w-[400px] sm:h-[266px] md:w-[500px] md:h-[333px] lg:w-[900px] lg:h-[600px]"
         // className="absolute h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[900px]"
         style={{ zIndex: index }}
