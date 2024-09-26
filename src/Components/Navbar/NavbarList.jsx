@@ -59,5 +59,5 @@ export function NavbarList() {
     );
   });
 
-  return <ul className=" items-center hidden md:flex">{items}</ul>;
+  return <ul className=" items-center flex">{items}</ul>;
 }

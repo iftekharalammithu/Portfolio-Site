@@ -2,6 +2,7 @@ import { NavbarBrand } from "./NavbarBrand";
 import { NavbarList } from "./NavbarList";
 import { motion } from "framer-motion";
 import { slideDown } from "./Varient";
+import NavbarMobile from "./NavbarMobile";
 
 export function Navbar() {
   return (
@@ -10,10 +11,15 @@ export function Navbar() {
       initial="initial"
       animate="enter"
     >
-      <nav className="bg-[#999D9E]   inset-x-0 top-0 z-10 ">
-        <div className="flex items-center mx-5   justify-between px-8 py-4  text-background">
+      <nav className="bg-[#999D9E] bdr  inset-x-0 top-0 z-10 ">
+        <div className="flex items-center mx-2 md:mx-3 lg:mx-5   justify-between md:px-8 md:py-4  text-background">
           <NavbarBrand />
-          <NavbarList />
+          <div className="hidden md:block">
+            <NavbarList />
+          </div>
+          <div className="md:hidden">
+            <NavbarMobile />
+          </div>
         </div>
       </nav>
     </motion.header>
