@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-y: auto !important;
+}
 :root {
   background-color: rgb(0, 0, 0);
   --time: 16s;
