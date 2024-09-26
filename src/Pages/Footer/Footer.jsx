@@ -34,7 +34,7 @@ const Footer = () => {
       <div className="mx-4 md:mx-10 lg:mx-20  flex flex-col md:flex-row justify-between">
         <div className="pt-10  md:pt-20 max-w-4xl flex flex-col gap-2">
           <img
-            src="src/assets/eye-svgrepo-com.svg"
+            src="./src/assets/eye-svgrepo-com.svg"
             className="w-16 h-16 md:w-24 md:h-24 mb-4"
             alt=""
           />
@@ -129,7 +129,7 @@ const Footer = () => {
         {/* // ... existing code ... */}
         <div className="flex flex-col  items-center  gap-4 p-6 md:p-10">
           <img
-            src="src/assets/tilla-svgrepo-com.svg"
+            src="./src/assets/tilla-svgrepo-com.svg"
             className="w-16 h-16 md:w-24 md:h-24 mb-4"
             alt="Tilla SVG"
           />
