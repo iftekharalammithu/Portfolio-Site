@@ -10,6 +10,19 @@
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
+@media screen and (max-width: 768px) {
+  .animated-item {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .animated-item {
+    font-size: 28px;
+    letter-spacing: 0.5px;
+  }
+}
 
 .animated-item:nth-child(2n + 2) {
   animation-delay: 2s;

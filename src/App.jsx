@@ -15,7 +15,7 @@ const App = () => {
       </Transition>
       <Work></Work>
       <Footer></Footer>
-      <Test></Test>
+      {/* <Test></Test> */}
     </>
   );
 };

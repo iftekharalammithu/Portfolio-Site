@@ -3,16 +3,37 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const imageLinks = [
-  { name: "Image1", link: "https://via.placeholder.com/300?text=Image+1" },
-  { name: "Image 2", link: "https://via.placeholder.com/300?text=Image+2" },
-  { name: "Image 3", link: "https://via.placeholder.com/300?text=Image+3" },
-  { name: "Image 4", link: "https://via.placeholder.com/300?text=Image+4" },
-  { name: "Image 5", link: "https://via.placeholder.com/300?text=Image+5" },
+  {
+    name: "Image1",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357043/cld-sample.jpg",
+  },
+  {
+    name: "Image 2",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357043/cld-sample-2.jpg",
+  },
+  {
+    name: "Image 3",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357043/cld-sample-3.jpg",
+  },
+  {
+    name: "Image 4",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357044/cld-sample-4.jpg",
+  },
+  {
+    name: "Image 5",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727357044/cld-sample-5.jpg",
+  },
 ];
 
 const Work = () => {
   return (
-    <div id="work" className=" pt-20  justify-center bg-slate-200 items-center">
+    <div id="work" className="pt-20  justify-center bg-slate-200 items-center">
+      <h1
+        className=" text-4xl sm:text-5xl text-center font-bold
+"
+      >
+        Projects
+      </h1>
       {imageLinks.map((image, index) => (
         <ImageWithScaleAnimation
           image={image.link}
@@ -24,7 +45,7 @@ const Work = () => {
       <div className="relative">
         <div className="absolute bg-black bottom-0 w-full">
           <svg
-            className="w-full "
+            className="w-full"
             viewBox="0 0 1420 185"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -55,16 +76,16 @@ const ImageWithScaleAnimation = ({ image, index, name }) => {
   return (
     <div
       ref={ref}
-      className="sticky top-0 h-[800px]  flex justify-center items-center overflow-hidden"
+      className="sticky  top-0 h-[600px] md:h-[700px] lg:h-[800px] flex justify-center items-center overflow-hidden"
     >
       <motion.img
         onClick={() => {
-          // console.log("clicked", index, image);
           window.open(name, "_blank");
         }}
         src={image}
         alt={`Image ${index + 1}`}
-        className="h-[600px] w-[600px] absolute  "
+        className="absolute w-[300px] rounded-2xl h-[200px] sm:w-[400px] sm:h-[266px] md:w-[500px] md:h-[333px] lg:w-[900px] lg:h-[600px]"
+        // className="absolute h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[900px]"
         style={{ zIndex: index }}
         animate={controls}
         initial={{ scale: 1 }}

@@ -31,16 +31,18 @@ const Footer = () => {
   }, []);
   return (
     <div id="contact" className="bg-black text-white">
-      <div className="mx-20 flex justify-between ">
-        <div className=" pt-20 max-w-4xl  flex flex-col gap-2">
+      <div className="mx-4 md:mx-10 lg:mx-20  flex flex-col md:flex-row justify-between">
+        <div className="pt-10  md:pt-20 max-w-4xl flex flex-col gap-2">
           <img
-            src="src\assets\eye-svgrepo-com.svg"
-            className="w-24 h-24 mb-4 "
+            src="src/assets/eye-svgrepo-com.svg"
+            className="w-16 h-16 md:w-24 md:h-24 mb-4"
             alt=""
           />
 
-          <h1 className="text-4xl mb-4 font-bold">Like what you see?</h1>
-          <p className="text-[20px] capitalize text-pretty  font-normal">
+          <h1 className="text-2xl md:text-4xl mb-4 font-bold">
+            Like what you see?
+          </h1>
+          <p className="text-[16px] md:text-[20px] md:max-w-xl lg:max-w-2xl capitalize text-pretty font-normal">
             If you&apos;ve made it down this far, why not send me an email?{" "}
             <br />
             Schedule a free consultation to learn more about my services and how
@@ -48,12 +50,12 @@ const Footer = () => {
             can turn your ideas into functional, user-friendly applications.
             Let&apos;s connect to discuss your project.
           </p>
-          <div className="flex  gap-10  justify-left mt-12 ">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-10 justify-left mt-6 md:mt-12 ">
             <button
               onClick={() =>
                 window.open("https://wa.me/601860104523", "_blank")
               }
-              className="button2  gap-4"
+              className="button2 gap-4 justify-center"
             >
               Contact Me
               <svg
@@ -89,7 +91,7 @@ const Footer = () => {
               onClick={() =>
                 window.open("https://wa.me/+8801860104523", "_blank")
               }
-              className="button2 "
+              className="button2 justify-center"
             >
               WhatsApp
               <svg
@@ -124,67 +126,74 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className=" gap-2 p-20">
+        {/* // ... existing code ... */}
+        <div className="flex flex-col  items-center  gap-4 p-6 md:p-10">
           <img
-            src="src\assets\tilla-svgrepo-com.svg"
-            className="w-24 h-24 right-0  mb-4 "
-            alt=""
+            src="src/assets/tilla-svgrepo-com.svg"
+            className="w-16 h-16 md:w-24 md:h-24 mb-4"
+            alt="Tilla SVG"
           />
-          <div className="social-links ">
+          <div className="social-links grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <a
-              className="  social-link"
+              className="social-link"
               href="https://github.com/iftekharalammithu"
               target="_blank"
+              rel="noopener noreferrer"
               title="Github"
             >
-              <FaGithub className=" mb-2" />
+              <FaGithub className="w-6 h-6  md:w-8 md:h-8" />
             </a>
             <a
               className="social-link"
               href="https://www.linkedin.com/in/iftekharalammithu"
               target="_blank"
+              rel="noopener noreferrer"
               title="Linkedin"
             >
-              <FaLinkedin />
+              <FaLinkedin className="w-6 h-6 md:w-8 md:h-8" />
             </a>
             <a
-              className=" social-link"
+              className="social-link"
               href="https://x.com/M1thuChowdhury"
               target="_blank"
+              rel="noopener noreferrer"
               title="Twitter"
             >
-              <FaTwitter />
+              <FaTwitter className="w-6 h-6 md:w-8 md:h-8" />
             </a>
             <a
-              className=" social-link"
+              className="social-link"
               href="https://www.instagram.com/iftekharalammithu"
               target="_blank"
+              rel="noopener noreferrer"
               title="Instagram"
             >
-              <FaInstagram />
+              <FaInstagram className="w-6 h-6 md:w-8 md:h-8" />
             </a>
             <a
-              className=" social-link"
-              target="_blank"
+              className="social-link"
               href="https://www.pinterest.com/iftekharalammithu/"
+              target="_blank"
+              rel="noopener noreferrer"
               title="Pinterest"
             >
-              <FaPinterest />
+              <FaPinterest className="w-6 h-6 md:w-8 md:h-8" />
             </a>
             <a
-              className=" social-link"
+              className="social-link"
               href="https://discord.com/users/iftekharalammithu"
               target="_blank"
+              rel="noopener noreferrer"
               title="Discord"
             >
-              {" "}
-              <FaDiscord />
+              <FaDiscord className="w-6 h-6 md:w-8 md:h-8" />
             </a>
           </div>
         </div>
+        {/* // ... remaining code ... */}
       </div>
-      <div className="mx-20 border-t border-gray-700 my-4"></div>
-      <div className="  mx-20 flex flex-col items-center text-xl font-semibold">
+      <div className="mx-4 md:mx-20 border-t border-gray-700 my-4"></div>
+      <div className="mx-4 md:mx-20 flex flex-col items-center text-sm md:text-xl font-semibold">
         <span>Local time:</span>
         {localTime}
       </div>
