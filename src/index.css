@@ -12,9 +12,11 @@ body {
   --width: 1400px;
   --quantity: 2;
 }
-::webkit-scrollbar {
+
+::-webkit-scrollbar {
   display: none;
 }
+
 .bdr {
   border: 1px solid red;
 }
