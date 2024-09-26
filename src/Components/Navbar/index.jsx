@@ -11,7 +11,7 @@ export function Navbar() {
       animate="enter"
     >
       <nav className="bg-[#999D9E]   inset-x-0 top-0 z-10 ">
-        <div className="flex items-center mx-5  justify-between px-8 py-4 text-background">
+        <div className="flex items-center mx-5   justify-between px-8 py-4  text-background">
           <NavbarBrand />
           <NavbarList />
         </div>

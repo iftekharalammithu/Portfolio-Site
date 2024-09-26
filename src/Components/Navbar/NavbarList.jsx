@@ -47,7 +47,7 @@ export function NavbarList() {
     return (
       <li
         key={id}
-        className="group transition-transform duration-450 ease-in-expo  hover:scale-150 p-4"
+        className="group  transition-transform duration-450 ease-in-expo  hover:scale-150 p-4"
       >
         <Link to={href}>
           <span className="text-base capitalize">{title}</span>
@@ -59,5 +59,5 @@ export function NavbarList() {
     );
   });
 
-  return <ul className="flex items-center max-lg:hidden ">{items}</ul>;
+  return <ul className=" items-center hidden md:flex">{items}</ul>;
 }
