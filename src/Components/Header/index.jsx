@@ -8,40 +8,37 @@ import img from "../../assets/final2.png";
 export function Header() {
   return (
     <motion.header
-      className="relative h-[90vh]  bg-[#999D9E] overflow-hidden bg-secondary-foreground text-background"
+      className="relative h-[90vh] bg-[#999D9E] overflow-hidden bg-secondary-foreground text-background"
       variants={slideUp}
       initial="initial"
       animate="enter"
     >
-      <div className="relative  h-full">
-        <div className="md:ml-auto ">
-          <div className="mx-10 absolute right-0 mt-[200px]  max-md:my-12 md:mx-36">
-            <div className="mb-4 md:mb-20 justify-end flex">
-              <MoveDownRight size={28} strokeWidth={1.25} />
-            </div>
-
-            <h4 className="text-[clamp(1.55em,2.5vw,2.75em)] text-right">
-              <span className="block">Freelance</span>
-              <span className="block">Full Stack Developer</span>
-            </h4>
+      <div className="relative h-full flex flex-col justify-between">
+        <div className="flex mt-14 flex-col items-end p-4 sm:p-8 md:p-12 lg:p-16">
+          <div className="mb-4 md:mb-8">
+            <MoveDownRight size={28} strokeWidth={1.25} />
           </div>
+          <h4 className="text-right text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            <span className="block">Freelance</span>
+            <span className="block">Full Stack Developer</span>
+          </h4>
         </div>
-        {/* Image positioned at the bottom */}
-        <img
-          loading="lazy"
-          // absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-          className=" absolute  h-[866px] w-[866px] overflow-visible -bottom-16  -translate-x-1/2 left-1/2 transform " // Set the image to be at the bottom
-          style={{
-            filter: `
-            drop-shadow(1px 0 1px white)
-            drop-shadow(-1px 0 1px white)
-            drop-shadow(0 1px 1px white)
-            drop-shadow(0 -1px 1px white)
-          `,
-          }}
-          src={img}
-          alt="Mtihu"
-        />
+        <div className="relative flex-grow">
+          <img
+            loading="lazy"
+            className="absolute w-full max-w-[866px] h-auto max-h-[80vh] object-contain bottom-0 left-1/2 transform -translate-x-1/2"
+            style={{
+              filter: `
+                drop-shadow(1px 0 1px white)
+                drop-shadow(-1px 0 1px white)
+                drop-shadow(0 1px 1px white)
+                drop-shadow(0 -1px 1px white)
+              `,
+            }}
+            src={img}
+            alt="Mtihu"
+          />
+        </div>
         <Name_Animate />
       </div>
     </motion.header>

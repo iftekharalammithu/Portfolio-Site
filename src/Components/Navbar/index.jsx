@@ -11,7 +11,7 @@ export function Navbar() {
       initial="initial"
       animate="enter"
     >
-      <nav className="bg-[#999D9E] bdr  inset-x-0 top-0 z-10 ">
+      <nav className="bg-[#999D9E]   inset-x-0 top-0 z-10 ">
         <div className="flex items-center mx-2 md:mx-3 lg:mx-5   justify-between md:px-8 md:py-4  text-background">
           <NavbarBrand />
           <div className="hidden md:block">

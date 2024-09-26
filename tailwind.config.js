@@ -7,10 +7,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        marker: ['"Permanent Marker"', "cursive"],
+      },
+      fontWeight: {
+        "extra-heavy": "1200",
+      },
       colors: {
         textcolor: "#ff4D00",
-        // background: 'hsl(var(--background))',
-        // foreground: 'hsl(var(--foreground))',
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -50,12 +56,7 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
-      fontFamily: {
-        marker: ['Permanent Marker"', "cursive"],
-      },
-      fontWeight: {
-        "extra-heavy": "1200",
-      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -63,5 +64,5 @@ export default {
       },
     },
   },
-  plugins: [tailwindPlugin, animatePlugin, require("tailwindcss-animate")],
+  plugins: [tailwindPlugin, animatePlugin],
 };
