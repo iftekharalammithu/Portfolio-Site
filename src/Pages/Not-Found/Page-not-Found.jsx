@@ -9,7 +9,7 @@ const Pagenotfound = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="container ">
         <input id="switch" type="checkbox" />
         <div className="ellipse"></div>
         <div className="ray"></div>

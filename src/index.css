@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   --time: 16s;
   --width: 1400px;
   --quantity: 2;
