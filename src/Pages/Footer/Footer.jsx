@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-4 md:gap-10 justify-left mt-6 md:mt-12 ">
             <button
               onClick={() =>
-                window.open("https://wa.me/601860104523", "_blank")
+                window.open("mailto:iftekharalammithu45@gmail.com", "_blank")
               }
               className="button2 gap-4 justify-center"
             >
