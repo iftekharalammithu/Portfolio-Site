@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import tilla from "../../assets/tilla-svgrepo-com.svg";
+import eye from "../../assets/eye-svgrepo-com.svg";
 import "./Footer.css";
 import {
   FaDiscord,
@@ -33,11 +35,7 @@ const Footer = () => {
     <div id="contact" className="bg-black text-white">
       <div className="mx-4 md:mx-10 lg:mx-20  flex flex-col md:flex-row justify-between">
         <div className="pt-10  md:pt-20 max-w-4xl flex flex-col gap-2">
-          <img
-            src="./src/assets/eye-svgrepo-com.svg"
-            className="w-16 h-16 md:w-24 md:h-24 mb-4"
-            alt=""
-          />
+          <img src={eye} className="w-16 h-16 md:w-24 md:h-24 mb-4" alt="" />
 
           <h1 className="text-2xl md:text-4xl mb-4 font-bold">
             Like what you see?
@@ -129,7 +127,7 @@ const Footer = () => {
         {/* // ... existing code ... */}
         <div className="flex flex-col  items-center  gap-4 p-6 md:p-10">
           <img
-            src="./src/assets/tilla-svgrepo-com.svg"
+            src={tilla}
             className="w-16 h-16 md:w-24 md:h-24 mb-4"
             alt="Tilla SVG"
           />
