@@ -43,7 +43,7 @@ const About = () => {
           </div>
           <div className="mt-10 md:mt-20 text-[16px] sm:text-[18px] md:text-[20px] gap-5 md:gap-9 flex flex-wrap justify-center lg:justify-start">
             <a
-              href="Download Link"
+              href="#contact"
               className="relative inline-flex items-center justify-start py-2 px-4 sm:py-3 sm:pl-4 sm:pr-12 overflow-hidden font-semibold text-[#272624] transition-all duration-150 ease-in-out rounded-2xl hover:pl-10 hover:pr-6 bg-gray-50 group"
             >
               <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-textcolor group-hover:h-full"></span>
