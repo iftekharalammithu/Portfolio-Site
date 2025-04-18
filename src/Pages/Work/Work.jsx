@@ -31,6 +31,11 @@ const imageLinks = [
       "https://github.com/iftekharalammithu/E-Commerce-Project-FontEND.git",
     link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1727366081/Screenshot_182_wq8iog.png",
   },
+  {
+    name: "Image 6",
+    projectLink: "https://github.com/iftekharalammithu/airbnb_clone",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1745001805/airbnbhome_iuyebh.png",
+  },
 ];
 
 const Work = () => {
