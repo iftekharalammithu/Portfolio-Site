@@ -36,6 +36,16 @@ const imageLinks = [
     projectLink: "https://github.com/iftekharalammithu/airbnb_clone",
     link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1745001805/airbnbhome_iuyebh.png",
   },
+  {
+    name: "Image 7",
+    projectLink: "https://github.com/iftekharalammithu/car_dealer",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1756488227/image_cszzxe.png",
+  },
+  {
+    name: "Image 8",
+    projectLink: "https://github.com/iftekharalammithu/car_dealer",
+    link: "https://res.cloudinary.com/dzq7wlebm/image/upload/v1756488217/image-1_dzsag8.png",
+  },
 ];
 
 const Work = () => {
